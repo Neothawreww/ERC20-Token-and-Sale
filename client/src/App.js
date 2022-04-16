@@ -83,14 +83,14 @@ class App extends Component {
     }
     return (
       <div className="App">
-        <h1>Azure Token Sale</h1>
-        <p>Get your AZE tokens today!</p>
+        <h1>BitFuel Token Sale</h1>
+        <p>Get your BFUEL tokens today!</p>
         <h2>KYC Whitelisting</h2>
         Address to allow: <input type="text" name="kycAddress" value={this.state.kycAddress} onChange={this.handleInputChange} />
         <button type="button" onClick={this.handleKycWhiteListing}>Add to Whitelist</button>
         <h2>Buy Tokens</h2>
         <p>To buy tokens, send Wei to the following address: {this.state.tokenSaleAddress}</p>
-        <p>Current token balance: {this.state.userTokens} AZE</p>
+        <p>Current token balance: {this.state.userTokens} BFUEL</p>
         <button type="button" onClick={this.handleBuyTokens}>Buy more tokens</button>
       </div>
     );
