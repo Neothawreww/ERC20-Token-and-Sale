@@ -27,7 +27,7 @@ module.exports = {
     },
     ropsten_infura: {
       provider: function() {
-        return new HDWalletProvider(process.env.MNEMONIC, "", AccountIndex)
+        return new HDWalletProvider(process.env.MNEMONIC, "https://ropsten.infura.io/v3/9fa7a488e03f4b4aae7f256dc949708d", AccountIndex)
       },
       network_id: 3
     }
